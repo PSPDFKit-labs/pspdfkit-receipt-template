@@ -5,9 +5,18 @@ This is a PDF Generator API example that creates a receipt PDF from HTML. Replac
 ## Installation
 
 ```bash
+# install dependencies
 npm install
 
+# run the example
 node index.js
 ```
 
 The resulting PDF will be saved in the `result.pdf` file.
+
+
+## Contributing
+
+Please ensure
+[you have signed our CLA](https://pspdfkit.com/guides/web/current/miscellaneous/contributing/) so that we can
+accept your contributions.
