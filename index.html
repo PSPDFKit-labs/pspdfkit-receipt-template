@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Receipt</title>
+  </head>
+
+  <body>
+    <div id="pspdfkit-header">
+      <div class="header-columns">
+        <div class="logotype">
+          <img class="logo" src="logo.svg" />
+          <p>Company</p>
+        </div>
+
+        <div>
+          <p>[Company Info]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" style="page-break-after: always">
+      <div>
+        <h2>Receipt #</h2>
+      </div>
+
+      <div class="intro-table">
+        <div class="intro-form intro-form-item">
+          <p class="intro-table-title">Billed To:</p>
+          <p>
+            Company Ltd.<br />
+            Address<br />
+            Country<br />
+            VAT ID: ATU12345678
+          </p>
+        </div>
+
+        <div class="intro-form">
+          <div class="intro-form-item-border">
+            <p class="intro-table-title">Payment Date:</p>
+            <p>November 22nd 2021</p>
+          </div>
+
+          <div class="intro-form-item-border">
+            <p class="intro-table-title">Payment Method:</p>
+            <p>Bank Transfer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-box">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr class="heading">
+              <td>Description</td>
+              <td>QTY</td>
+              <td>Unit Price</td>
+              <td>Total</td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="summary-box">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr class="item">
+              <td></td>
+              <td>Subtotal:</td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td>Discount:</td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td>Subtotal Less Discount:</td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td>Tax Rate:</td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td>Total Tax:</td>
+              <td></td>
+            </tr>
+
+            <tr class="item">
+              <td></td>
+              <td>Shipping/Handling:</td>
+              <td></td>
+            </tr>
+
+            <tr class="no-border-item">
+              <td></td>
+              <td>Total Due:</td>
+              <td></td>
+            </tr>
+
+            <tr class="total">
+              <td></td>
+              <td>Amount Paid:</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="page" style="page-break-after: always">
+      <div>
+        <h4>Thank you for your purchase!</h4>
+      </div>
+
+      <div class="form">
+        <label for="notes" class="label"> Notes: </label>
+        <input type="text" id="notes" class="border-bottom" value="" />
+      </div>
+
+      <div class="signer">
+        <div class="form signer-item">
+          <label for="date" class="label">Date:</label>
+          <input
+            type="text"
+            id="date"
+            class="border-bottom"
+            value="01/01/2021"
+          />
+        </div>
+
+        <div class="form signer-item">
+          <label for="signature" class="label">Issued by:</label>
+          <input type="text" id="signature" class="border" value="Sign Here" />
+        </div>
+      </div>
+    </div>
+
+    <div id="pspdfkit-footer">
+      <div class="footer-columns">
+        <span>Receipt</span>
+        <span>Page {{ pageNumber }} of {{ pageCount }}</span>
+      </div>
+    </div>
+  </body>
+</html>

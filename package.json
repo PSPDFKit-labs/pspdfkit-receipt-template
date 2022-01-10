@@ -1,0 +1,16 @@
+{
+  "name": "receipt",
+  "version": "1.0.0",
+  "description": "This is a PDF Generator API example that creates a receipt PDF from HTML. Replace the `your_api_key_here` placeholder with your live API key from https://dashboard.pspdfkit.com/api_keys/ and run this command:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "form-data": "^4.0.0"
+  }
+}
