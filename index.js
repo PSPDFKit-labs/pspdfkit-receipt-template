@@ -32,7 +32,7 @@ formData.append(
   fs.createReadStream("SpaceMono-Regular.ttf")
 );
 formData.append("logo.svg", fs.createReadStream("logo.svg"));
-// console.log(formData); // iterable object
+// console.log(formData);
 
 (async () => {
   try {
@@ -41,7 +41,7 @@ formData.append("logo.svg", fs.createReadStream("logo.svg"));
       formData,
       {
         headers: formData.getHeaders({
-          Authorization: "Bearer YOUR_API_KEY_HERE", // replace with your API key
+          Authorization: "Bearer your_api_key_here", // replace with your API key
         }),
         responseType: "stream",
       }
