@@ -32,7 +32,7 @@ formData.append(
   fs.createReadStream("SpaceMono-Regular.ttf")
 );
 formData.append("logo.svg", fs.createReadStream("logo.svg"));
-// console.log(formData);
+// console.log("formdata", formData);
 
 (async () => {
   try {
@@ -50,8 +50,12 @@ formData.append("logo.svg", fs.createReadStream("logo.svg"));
     // console.log("response data", response.data);
     response.data.pipe(fs.createWriteStream("result.pdf"));
   } catch (e) {
-    const errorString = await streamToString(e.response.data);
-    console.log(errorString);
+    if (e.response) {
+      const errorString = await streamToString(e.response.data);
+      console.log(errorString);
+    } else {
+      console.log(e);
+    }
   }
 })();
 
